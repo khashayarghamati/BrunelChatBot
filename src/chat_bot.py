@@ -85,7 +85,7 @@ def run_bot():
 
         if prompt_type == 'text':
             st.subheader('GPT Version')
-            gpt_version = st.selectbox('Select GPT Version', ['gpt-3.5-turbo', 'gpt-4'])
+            gpt_version = st.selectbox('Select GPT Version', ['gpt-3.5-turbo', 'gpt-4', 'gpt-4-1106-preview', 'gpt-4-vision-preview'])
             token_number = st.number_input('Insert Token Max Size', min_value=1, max_value=2048, value=1, step=1)
             temperature = st.number_input('Insert Temperature', min_value=0.1, max_value=1.0, value=0.1, step=0.1)
             st.write('You selected:', gpt_version)
